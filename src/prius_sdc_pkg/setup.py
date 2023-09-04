@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'recorder_node = prius_sdc_pkg.video_recorder:main'
         ],
     },
 )
