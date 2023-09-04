@@ -1,0 +1,69 @@
+# Ignore build and install directories
+/build/
+/install/
+
+# Ignore log files
+/log/
+
+# Ignore auto-generated CMake and compilation files
+/CMakeLists.txt.user
+/CMakeCache.txt
+/CMakeFiles/
+/compile_commands.json
+/build-*/
+
+# Ignore Visual Studio Code (VSCode) settings (if using VSCode)
+/.vscode/
+
+# Ignore temporary and backup files
+*~
+*.swp
+
+# Ignore ROS2-specific generated files
+/install_manifest.txt
+/build-manifest.xml
+/rosidl_typesupport_*
+
+# Ignore package-specific build artifacts and logs
+/my_package_1/build/
+/my_package_1/log/
+/my_package_2/build/
+/my_package_2/log/
+# Add similar lines for each of your packages
+
+# Ignore ROS2 workspace build logs and artifacts (if not using colcon)
+/workspace.rosinstall
+/build-*
+
+# Ignore Python cache files and virtual environment directories (if using Python)
+__pycache__/
+venv/
+.venv/
+
+# Ignore user-specific settings files
+/.idea/
+/.project
+/.cproject
+
+# Ignore system and editor-specific files (customize this list based on your needs)
+.DS_Store
+Thumbs.db
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+
+# Ignore user-specific package configurations (e.g., for ROS2 packages)
+/ros2_ws/install/*
+/ros2_ws/build/*
+
+# Ignore your local configuration files (e.g., for text editors, IDEs)
+/settings.ini
+
+# Ignore binary files and large data files (e.g., logs, database dumps)
+*.bin
+*.sqlite
+*.db
+
+# Ignore any other files and directories that are specific to your project
+# Add custom ignores below this line
