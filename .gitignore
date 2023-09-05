@@ -1,6 +1,6 @@
 # Ignore build and install directories
-/build/
-/install/
+build/
+install/
 
 # Ignore log files
 /log/
@@ -12,7 +12,7 @@
 /compile_commands.json
 /build-*/
 
-# Ignore Visual Studio Code (VSCode) settings (if using VSCode)
+# Ignore Visual Studio Code (VSCode) settings
 /.vscode/
 
 # Ignore temporary and backup files
@@ -25,11 +25,8 @@
 /rosidl_typesupport_*
 
 # Ignore package-specific build artifacts and logs
-/my_package_1/build/
-/my_package_1/log/
-/my_package_2/build/
-/my_package_2/log/
-# Add similar lines for each of your packages
+/prius_sdc_pkg/build/
+/prius_sdc_pkg/log/
 
 # Ignore ROS2 workspace build logs and artifacts (if not using colcon)
 /workspace.rosinstall
@@ -52,10 +49,6 @@ Thumbs.db
 # Ignore compiled Python files
 *.pyc
 *.pyo
-
-# Ignore user-specific package configurations (e.g., for ROS2 packages)
-/ros2_ws/install/*
-/ros2_ws/build/*
 
 # Ignore your local configuration files (e.g., for text editors, IDEs)
 /settings.ini
