@@ -25,7 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'recorder_node = prius_sdc_pkg.video_recorder:main',
-            'driver_node = prius_sdc_pkg.driving_node:main'
+            'driver_node = prius_sdc_pkg.driving_node:main',
+            'spawner_node = prius_sdc_pkg.sdf_spawner:main'
         ],
     },
 )
