@@ -16,10 +16,10 @@ def generate_launch_description():
             output = 'screen',
         ),
 
-        # Node(
-        #     package = '',
-        #     executable = '',
-        #     name = '',
-        #     output = 'screen',
-        # )
+        Node(
+            package = 'prius_sdc_pkg',
+            executable = 'lights_spawner.bash',
+            name = 'Traffic_Lights',
+            output = 'screen',
+        )
     ])
