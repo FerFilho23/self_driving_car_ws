@@ -8,4 +8,4 @@ class Car():
         img = frame[0:640, 238:1042]
         img = cv2.resize(img, (320, 240))
 
-        detect_lanes(img)
+        distance, angle = detect_lanes(img)

@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from .utilities import Distance_
 
-def estimate_midlane(midlane_patches,Max_dist):
+def estimate_midlane(midlane_patches,max_dist):
 
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
     midlane_patches = cv2.morphologyEx(midlane_patches,cv2.MORPH_DILATE,kernel)
@@ -51,7 +51,7 @@ def estimate_midlane(midlane_patches,Max_dist):
                             BstCentroid_a = cent_a
                             BstCentroid_b = cent_b
 
-        if ((prevmin_dist!= 100_000) and (prevmin_dist>Max_dist)):
+        if ((prevmin_dist!= 100_000) and (prevmin_dist>max_dist)):
             #print("prev_mindist > Max Allowed Dist !!!")
             break
         if (type(BstCentroid_a)!= int):

@@ -13,7 +13,7 @@ def Distance(a,b):
 def Distance_(a,b):
     return math.sqrt( ( (a[1]-b[1])**2 ) + ( (a[0]-b[0])**2 ) )
 
-def findlaneCurvature(x1,y1,x2,y2):
+def findLaneCurvature(x1,y1,x2,y2):
     offset_Vert=90# angle found by tan-1 (slop) is wrt horizontal --> This will shift to wrt Vetical
 
     if((x2-x1)!=0):

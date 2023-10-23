@@ -2,18 +2,18 @@ import cv2
 import numpy as np
 from .utilities import Distance_, Cord_Sort
 
-def IsPathCrossingMid(Midlane,Mid_cnts,Outer_cnts):
+def IsPathCrossingMid(midlane,mid_cnts,outer_cnts):
 
     is_Ref_to_path_Left = 0
-    Ref_To_CarPath_Image = np.zeros_like(Midlane)
+    Ref_To_CarPath_Image = np.zeros_like(midlane)
     
-    Midlane_copy = Midlane.copy()
+    Midlane_copy = midlane.copy()
 
-    if not Mid_cnts:
+    if not mid_cnts:
         print("[Warning!!!] NO Midlane detected")
     
-    Mid_cnts_Rowsorted = Cord_Sort(Mid_cnts,"rows")
-    Outer_cnts_Rowsorted = Cord_Sort(Outer_cnts,"rows")
+    Mid_cnts_Rowsorted = Cord_Sort(mid_cnts,"rows")
+    Outer_cnts_Rowsorted = Cord_Sort(outer_cnts,"rows")
     Mid_Rows = Mid_cnts_Rowsorted.shape[0]
     Outer_Rows = Outer_cnts_Rowsorted.shape[0]
 
